@@ -69,6 +69,6 @@ if submit_button:
         #st.write("Here is the JSON for the chart generation:")
         #st.json(LLMresponse)
 
-st.write("Format of raw data for reference"_
+st.write("Format of raw data for reference")
 st.dataframe(df, height = 200)
 
