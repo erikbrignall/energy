@@ -13,7 +13,7 @@ import pandas_gpt
 st.set_page_config(page_title='National Grid Analyst')
 st.image('logo-temp2.PNG', width=200)
 st.title('ChasBot 1000 - Grid Analyst')
-st.write('The following is a demo of the using LLMs to analyse national grid data')
+st.write('The following is a demo of using LLMs to analyse national grid data. ')
 
 openai.api_key = st.secrets["OpenAIapikey"]
 
@@ -60,13 +60,15 @@ if submit_button:
         x = df.ask(query_text)
 
         st.write(x)
-        
+
+
         #response_text = response.choices[0].message.content
         #response_text = response_text.replace('\n', ' ').lower()
 
         #LLMresponse = response_text
         #st.write("Here is the JSON for the chart generation:")
         #st.json(LLMresponse)
-        
+
+st.write("Format of raw data for reference"_
 st.dataframe(df, height = 200)
 
