@@ -22,7 +22,7 @@ url = "https://api.nationalgrideso.com/dataset/cbd45e54-e6e2-4a38-99f1-8de6fd96d
 df = pd.read_csv(url)
 #df.head()
 
-df2 = df.head()
+#df2 = df.head()
 
 # Input Query
 with st.form(key='my_form_to_submit'):
