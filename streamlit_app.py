@@ -30,8 +30,6 @@ with st.form(key='my_form_to_submit'):
     query_text = st.text_input('Enter Query')
     submit_button = st.form_submit_button(label='Submit')
 
-st.dataframe(df, height = 200)
-
 ## The below function loops through the JSON structure and returns any value matching the key
 def extract_values(obj, key):
         """Pull all values of specified key from nested JSON."""
@@ -70,4 +68,5 @@ if submit_button:
         #st.write("Here is the JSON for the chart generation:")
         #st.json(LLMresponse)
         
-        
+st.dataframe(df, height = 200)
+
