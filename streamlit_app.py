@@ -26,7 +26,7 @@ df2 = df.head()
 
 # Input Query
 with st.form(key='my_form_to_submit'):
-    st.write('Please input your query to generate the appropriate chart:')
+    st.write('Please input your query:')
     query_text = st.text_input('Enter Query')
     submit_button = st.form_submit_button(label='Submit')
 
