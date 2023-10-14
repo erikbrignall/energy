@@ -1,3 +1,5 @@
 openai
 streamlit
 pandas
+embedchain
+pandas_gpt
