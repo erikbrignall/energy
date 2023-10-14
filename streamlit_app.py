@@ -7,10 +7,10 @@ import time
 import json
 import streamlit as st
 
-st.set_page_config(page_title='Chart Maker - DEMO')
+st.set_page_config(page_title='National Grid Analyst')
 st.image('logo-temp2.PNG', width=200)
-st.title('Chart Generator - DEMO')
-st.write('The following is a demo of the use of LLMs to generate parameters for use in a dynamic chart making webapp')
+st.title('ChasBot 1000 - Grid Analyst')
+st.write('The following is a demo of the using LLMs to analy')
 
 openai.api_key = st.secrets["OpenAIapikey"]
 
