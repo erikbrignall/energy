@@ -20,7 +20,9 @@ openai.api_key = st.secrets["OpenAIapikey"]
 url = "https://api.nationalgrideso.com/dataset/cbd45e54-e6e2-4a38-99f1-8de6fd96d7c1/resource/17becbab-e3e8-473f-b303-3806f43a6a10/download/tec-register-13-10-2023.csv"
 
 df = pd.read_csv(url)
-df.head()
+#df.head()
+
+df2 = df.head()
 
 # Input Query
 with st.form(key='my_form_to_submit'):
@@ -28,6 +30,7 @@ with st.form(key='my_form_to_submit'):
     query_text = st.text_input('Enter Query')
     submit_button = st.form_submit_button(label='Submit')
 
+st.dataframe(df, height = 200)
 
 ## The below function loops through the JSON structure and returns any value matching the key
 def extract_values(obj, key):
