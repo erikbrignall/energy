@@ -6,7 +6,9 @@ import requests
 import time
 import json
 import streamlit as st
-from embedchain import App
+import pandas_gpt 
+
+#from embedchain import App
 
 st.set_page_config(page_title='National Grid Analyst')
 st.image('logo-temp2.PNG', width=200)
