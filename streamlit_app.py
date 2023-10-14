@@ -58,13 +58,13 @@ if submit_button:
         # FETCH RESPONSE
         x = df.ask(query_text)
 
-        print(x)
+        st.write(x)
         
         #response_text = response.choices[0].message.content
         #response_text = response_text.replace('\n', ' ').lower()
 
-        LLMresponse = response_text
-        st.write("Here is the JSON for the chart generation:")
-        st.json(LLMresponse)
+        #LLMresponse = response_text
+        #st.write("Here is the JSON for the chart generation:")
+        #st.json(LLMresponse)
         
         
