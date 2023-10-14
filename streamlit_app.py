@@ -56,10 +56,12 @@ if submit_button:
 #if query_text is not None:   
         print("we have a query now")
         # FETCH RESPONSE
+        x = df.ask(query_text)
+
+        print(x)
         
-        
-        response_text = response.choices[0].message.content
-        response_text = response_text.replace('\n', ' ').lower()
+        #response_text = response.choices[0].message.content
+        #response_text = response_text.replace('\n', ' ').lower()
 
         LLMresponse = response_text
         st.write("Here is the JSON for the chart generation:")
