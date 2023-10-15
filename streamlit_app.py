@@ -16,6 +16,7 @@ st.title('ChasBot 1000 - Grid Analyst')
 st.write('The following is a demo of using LLMs to analyse national grid data. ')
 
 openai.api_key = st.secrets["OpenAIapikey"]
+pandas_gpt.model = 'gpt-4'
 
 url = "https://api.nationalgrideso.com/dataset/cbd45e54-e6e2-4a38-99f1-8de6fd96d7c1/resource/17becbab-e3e8-473f-b303-3806f43a6a10/download/tec-register-13-10-2023.csv"
 
