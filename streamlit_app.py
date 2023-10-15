@@ -70,6 +70,6 @@ if submit_button:
         #st.json(LLMresponse)
 
 st.write("Format of raw data for reference")
-st.write(df.info())
+st.write(list(df))
 #st.dataframe(df, height = 200)
 
